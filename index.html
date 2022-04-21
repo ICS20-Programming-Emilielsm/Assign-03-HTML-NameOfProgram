@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Calculator for Time and Speed">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Emilie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator for Time and Speed</title>
+  </head>
+  <body>
+    <!-- Call to java script file -->
+    <script src="./js/script.js"></script>
+    <h1>Calculator for Time and Speed</h1>
+		<table>
+			<tr>
+				<td>
+          <!-- get unput from user -->
+					<h3>Enter the Time:</h3>
+					<form action="javascript:calcTime()">
+						<label for="time">Time:</label>
+						<input type="number" step="any" min="0" id="time" placeholder="Enter time">
+            <br><br>
+            <h3>Enter the Speed:</h3>
+					<form action="javascript:calcTime()">
+						<label for="speed">Speed:</label>
+						<input type="number" step="any" min="0" id="speed" placeholder="Enter speed">
+            <br><br>
+            <h3>Enter the Distance:</h3>
+					<form action="javascript:calcTime()">
+						<label for="distance">Distance:</label>
+						<input type="number" step="any" min="0" id="distance" placeholder="Enter distance">
+            <br><br>
+						<input type="submit" value="Calculate Time">
+            <input type="submit" value="Calculate Speed">
+					</form>
+				<td width=45%>
+          <!-- image -->
+					<img src="./images/speed.jfif" alt="Speed" width="85%" height="auto"/>
+          <img src="./images/time.webp" alt="Time" width="85%" height="auto"/>
+			    	</td>
+          </form>
+          </form>
+          </form>
+          </form>
+          </form>
+        </td>
+      </tr>
+    </table>
+		<!-- Create a space where the user information will be displayed -->
+		  <div id="display-results">
+			<div id="totalTime">
+      <div id="totalSpeed">
+		</div>
+		</div>
+  </body>
+</html>
+
