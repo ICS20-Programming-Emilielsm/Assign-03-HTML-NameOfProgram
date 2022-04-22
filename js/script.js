@@ -1,8 +1,5 @@
 "use strict"
-
-/**
- * This function calculates area and perimeter of rectangle.
- */
+// Calculations for Time
 function calcTime() {
   // get user input
   let speed = parseFloat(document.getElementById("speed").value)
@@ -16,15 +13,30 @@ function calcTime() {
   document.getElementById("totalTime").innerHTML = " Your Time is  " + totalTime.toFixed(2)
 }
 
+// Calculations for Speed
 function calcSpeed () {
 // get user input
   let time = parseFloat(document.getElementById("time").value)
-  let distance = parseFloat(document.getElementById("distance").value)
+  let distance2 = parseFloat(document.getElementById("distance2").value)
   
   // calculate the volume
-  let totalSpeed = distance / time
+  let totalSpeed = distance2 / time
 
   
   // display the results
   document.getElementById("totalSpeed").innerHTML = " You speed is " + totalSpeed.toFixed(2)
+}
+
+// Calculations for Distance
+  function calcDistance () {
+// get user input
+  let time2 = parseFloat(document.getElementById("time2").value)
+  let speed2 = parseFloat(document.getElementById("speed2").value)
+  
+  // calculate the volume
+  let totalDistance = time2 * speed2
+
+  
+  // display the results
+  document.getElementById("totalDistance").innerHTML = " You distance is " + totalDistance.toFixed(2)
 }
