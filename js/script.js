@@ -10,7 +10,7 @@ function calcTime() {
 
   
   // display the results
-  document.getElementById("totalTime").innerHTML = " Your Time is  " + totalTime.toFixed(2)
+  document.getElementById("totalTime").innerHTML = " Your Time in hours is " + totalTime.toFixed(2)
 }
 
 // Calculations for Speed
@@ -24,7 +24,7 @@ function calcSpeed () {
 
   
   // display the results
-  document.getElementById("totalSpeed").innerHTML = " You speed is " + totalSpeed.toFixed(2)
+  document.getElementById("totalSpeed").innerHTML = " Your speed in km/h is " + totalSpeed.toFixed(2)
 }
 
 // Calculations for Distance
@@ -38,5 +38,5 @@ function calcSpeed () {
 
   
   // display the results
-  document.getElementById("totalDistance").innerHTML = " You distance is " + totalDistance.toFixed(2)
+  document.getElementById("totalDistance").innerHTML = " Your distance in km is " + totalDistance.toFixed(2)
 }
